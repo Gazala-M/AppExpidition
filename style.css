@@ -1,0 +1,496 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    max-width: 100%;
+    height: auto;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    cursor: pointer;
+    height: 90px;
+    background-color: #233B6F;
+}
+
+.nav-list {
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.nav-list li {
+    list-style: none;
+    padding: 26px 30px;
+}
+
+.nav-list li a {
+    text-decoration: none;
+    color: white;
+}
+
+.nav-list li a:hover {
+    background-color: rgb(11, 11, 241);
+    border: 1px solid white;
+    border-radius: 15px;
+    padding: 20px 20px;
+}
+
+.background{
+    background: url('../Images/home-top-banner.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.box-main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+   /* max-width: 50%;  */
+    margin: auto;
+    color: white;
+    height: 70%;
+}
+
+.firstsection {
+    height: 100vh;
+}
+
+.heading-sm {
+    font-family: 'Inter';
+    font-style: normal;
+    font-size: 18px;
+    line-height: 29px;
+
+    color: #FFFFFF;
+}
+
+.heading-bg {
+    font-family: 'Inter';
+    font-size: 45px;
+    font-style: normal;
+    line-height: 75px;
+
+    color: #FFFFFF;
+}
+
+.text-small {
+    font-size: 15px;
+    font-family: 'Inter';
+    font-style: normal;
+    line-height: 20px;
+
+    color: #FFFFFF;
+}
+
+.btn{
+    font-family: 'Inter';
+    font-style: normal;
+    font-size: 18px;
+    
+    padding: 12px 15px;
+    margin-top: 10px;
+    color: #FFFFFF;
+    cursor: pointer;
+    background: none;
+    border: 1px solid white;
+    border-radius: 8px;
+}
+.btn:hover{
+    background: #3E7BFF;
+    border-radius: 10px;
+}
+/* About section  */
+.section{
+    height: 700px;
+    background: #F3F4F7;
+}
+.about{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.about-heading{
+    font-family: 'Inter';
+    font-size: 45px;
+    font-style: normal;
+    line-height: 75px;
+    color: #233B6F;
+    text-align: center;
+    margin: 20px 80px;
+    padding: 20px 170px;
+}
+.about-para{
+    font-size: 16px;
+    font-family: 'Inter';
+    font-style: normal;
+    line-height: 20px;
+       
+    text-align: center;
+    color: #233B6F;
+    margin: 00px 85px;
+    padding: 0px 145px;
+
+}
+.container{
+    width: 1100px;
+    max-width: 100%;
+    margin: 45px auto;
+}
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.card{
+   
+    border-radius: 25px;   
+    background: #FFFFFF;
+    margin: 10px 20px;
+    padding: 20px 20px;
+    align-self: normal;
+    flex-wrap: wrap;
+    flex: 1 1 21rem;
+}
+.card-title{
+    margin: 10px 0px;
+    font-size: 20px;
+    color: #233B6F;
+}
+.card-text{
+    margin-bottom: 10px;
+    color: #233B6F;
+}
+/*.img-hover-icon{
+    opacity: 0;
+}
+
+.card:hover .img-hover-icon{
+    opacity: 1;   }*/
+
+.card:hover {
+    background: #233B6F;
+} 
+.card:hover .card-title{
+    color:#FFFFFF;
+}
+.card:hover .card-text{
+    color:#FFFFFF;
+}
+
+
+/* Reason section*/
+.reason-section{
+    height: 500px;
+}
+.reason-heading{
+    font-family: 'Inter';
+    font-size: 45px;
+    font-style: normal;
+    line-height: 75px;
+    color: #233B6F;
+    text-align: center;
+    margin: 20px 80px;
+    padding: 20px 170px;
+}
+.card-reason{
+    border: 1px solid #E7E9EF;
+    border-radius: 20px;   
+    background: #FFFFFF;
+    margin: 10px 20px;
+    padding: 20px 20px;
+    align-self: normal;
+    flex-wrap: wrap;
+    flex: 1 1 21rem;
+}
+.c-title{
+    margin: 10px 0px;
+    font-size: 20px;
+    color: #233B6F;
+}
+.c-text{
+    margin-bottom: 10px;
+    color: #233B6F;
+}
+.card-reason:hover{
+    background: #3E7BFF;
+}
+.card-reason:hover .c-title{
+    color: #FFFFFF;
+}
+.card-reason:hover .c-text{
+    color: #FFFFFF;
+}
+
+/* Development section */
+.develop-section{
+    height: 500px;
+    background: #F3F4F7;
+}
+.d-heading{
+    font-family: 'Inter';
+    font-size: 45px;
+    font-style: normal;
+    line-height: 75px;
+    color: #233B6F;
+    text-align: center;
+    margin: 20px 80px;
+    padding: 20px 170px;
+}
+.d-container{
+    width: 1300px;
+    max-width: 100%;
+    margin: 20px auto;
+}
+.d-row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.d-card{
+    margin: 10px 15px;
+    padding: 5px 0px;
+    align-self: normal;
+    flex-wrap: wrap;
+    flex: 1 1 21rem;
+}
+.d-card h4{
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 20px;
+    line-height: 24px;
+    color: #233B6F;
+}
+.arrow{
+    margin-bottom: 90px;
+    margin-left: -40px;
+}
+
+/*Get-in-touch section */
+.get-section{
+
+    height: 250px;
+    background: #3E7BFF;
+}
+.get{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.get-section h5{
+    font-style: normal;
+    line-height: 50px;
+    font-size: 45px;
+    color: #FFFFFF;
+    text-align: center;
+    margin: 24px 0px;
+    padding: 0;
+}
+.get-section p{
+    font-size: 16px;
+    font-family: 'Inter';
+    font-style: normal;
+    line-height: 20px;
+       
+    text-align: center;
+    color: #FFFFFF;
+    margin: 00px 85px;
+    padding: 0px 145px;
+}
+.get-section button{
+        font-family: 'Inter';
+        font-style: normal;
+        font-size: 18px;
+        
+        padding: 12px 15px;
+        margin-top: 25px;
+        color: #FFFFFF;
+        cursor: pointer;
+        background: none;
+        border: 1px solid white;
+        border-radius: 8px;
+}   
+ .get-section button:hover{
+        color: #3E7BFF;
+        background: #FFFFFF;
+        border-radius: 10px;
+}
+
+/*Client-feedback Section*/
+.client-section{
+    height: 400px;
+    background: #F3F4F7;
+}
+.client-heading{
+    font-style: normal;
+    line-height: 50px;
+    font-size: 45px;
+    color: #233B6F;
+    text-align: center;
+    margin: 0px;
+    padding: 0;
+}
+.client-container{
+    width: 1300px;
+    max-width: 100%;
+    
+}
+.client-row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.feedback{
+    background: #FFFFFF;
+    border: 1px solid #FFFFFF;
+    border-radius: 15px;
+    margin: 30px 0px;
+    padding:20px 10px;
+    width: 60%;
+}
+.feedback p{
+    font-size: 20px;
+    font-style: normal;
+    line-height: 40px;
+       
+    text-align: center;
+    color: #233B6F;
+    margin: 5px 30px;
+    padding: 0px 40px;
+}
+.quote-invert{
+    float: right;
+    margin-bottom: 25px;
+    margin-right: 50px;
+    transform: rotate(-180deg);
+}
+
+/* Contact section*/
+.contact-section{
+    height: 810px;
+    background: #233B6F;
+    
+}
+.contact-us-section{
+    max-width: 100%;
+    display: flex;    
+}
+.first-half{
+    width: 50%;
+  
+    min-height: 700px;
+}
+.first-half img{
+    max-width: 100%;
+    height: 800px;
+  
+}
+.second-half{
+    width: 50%;
+  /*  text-align: center;   */
+}
+.contact-form{
+    margin: 30px 10px;
+    padding: 15px 30px;
+}
+.form-title{
+    font-style: normal;
+    line-height: 50px;
+    font-size: 35px;
+    color: #FFFFFF;
+}
+.form-p{
+    font-size: 18px;
+    font-style: normal;
+    line-height: 45px;  
+    color: #FFFFFF;
+}   
+   
+.formfield label{
+    display: block;
+    margin-top: 10px;
+    color:#FFFFFF;
+    line-height: 19px;
+    font-size: 18px;
+}
+.formfield input, textarea, select, option{
+    display: block;
+    width: 500px;
+    margin: 10px 0px;
+    padding: 15px 5px;
+    border-radius: 15px;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+    opacity: 0.5; 
+}
+.main-btn{
+    font-style: normal;
+    font-size: 18px;
+    
+    padding: 12px 20px;
+    margin-top: 25px;
+    color: #FFFFFF;
+    cursor: pointer;
+    background: #3E7BFF;
+    border: 1px solid white;
+    border-radius: 10px;
+    float: right;
+    position: relative;
+    right: 40px;
+} 
+ 
+ footer{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 19px;
+    color: #fff; 
+    background: #3E7BFF;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ } 
+
+
+
+
+
+
+
+
+.line{
+    width: 33px;
+    background-color: aliceblue;
+    height: 4px;
+    margin: 5px 3px;
+}
+ .burger{
+     display: none;
+     position: absolute;
+     cursor: pointer;
+     right: 15%;
+     top: 15px;
+ }   
